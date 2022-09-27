@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        colors="true" verbose="true" beStrictAboutOutputDuringTests="true"
+        beStrictAboutTestsThatDoNotTestAnything="false" stopOnError="true" stopOnFailure="false"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+    <coverage includeUncoveredFiles="true">
+        <include>
+            <directory>.</directory>
+        </include>
+    </coverage>
+    <php>
+        <ini name="memory_limit" value="-1"/>
+        <ini name="error_reporting" value="-1"/>
+    </php>
+</phpunit>
