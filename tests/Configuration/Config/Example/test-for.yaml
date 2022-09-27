@@ -1,0 +1,8 @@
+root:
+  firstLevelString:
+    secondLevelHello: 'Hello'
+    secondLevelWorld: "World"
+  firstLevelArray:
+    - "valueOne"
+    - "valueTwo"
+    - "valueThree"

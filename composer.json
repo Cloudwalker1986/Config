@@ -1,0 +1,37 @@
+{
+  "name": "annotation/config",
+  "description": "The config component supports you of loading any kind of configuration files like YAML, INI, .ENV and many more. With the help of the attributes create easily an class instance with a auto populated object.",
+  "type": "project",
+  "require": {
+    "php": "8.1.*",
+    "autowired/autowired": "2.2.*",
+    "ext-yaml": "*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^9.5.1"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dennis Munchausen",
+      "email": "munchausen.dennis@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "classmap": [
+      "src/",
+      "tests/"
+    ],
+    "psr-4": {
+      "Annotation\\Config\\": "src",
+      "Annotation\\ConfigTest\\": "tests"
+    }
+  },
+  "scripts": {
+    "all-tests": [
+      "vendor/bin/phpunit -c tests/phpunit.xml tests/"
+    ]
+  }
+}
